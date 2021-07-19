@@ -1,0 +1,11 @@
+ <div *ngIf="characters.length !== 0">
+      <h2 class="mb-3 text-center">Characters</h2>
+    <mat-list dense>
+      <mat-divider></mat-divider>
+      <mat-list-item *ngFor="let character of characters.slice(0,20)" >
+        <h2 matLine style="font-size: medium; font-weight: 500;"> {{character.name}} </h2>
+        <p matLine style="font-size: small;">{{character.gender}} -- {{character.age}}</p>
+        <mat-divider></mat-divider>
+      </mat-list-item>
+    </mat-list>
+    </div>
